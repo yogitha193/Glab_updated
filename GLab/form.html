@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+    <title>Form Page</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    
+    <img src="lab-test.jpg" alt="Lab test image">
+    <h2>1. Your Contact Details </h2>
+    <label for="fullName">Full Name</label>
+    <input type="text" id="fullName" required>
+
+    <label for="PatientId">Patient Id if exists</label>
+    <input type="text" id="PatientId" required></br>
+
+    <label for="Contact">Contact Number</label>
+    <input type="number" id="Contact" required>
+
+    <label for="EmailId">Email Id</label>
+    <input type="email" id="EmailId" required></br>
+
+    <h2>2. Address</h2>
+    <label for="HouseNo">H-No</label>
+    <input type="number" id="HouseNo" required>
+
+    <label for="street">Street</label>
+    <input type="text" id="street" required></br>
+
+    <label for="area">Area</label>
+    <input type="text" id="area" required></br>
+
+    <b>District</b></br>
+    <select name="district" id="district" required>
+    <option value="">Choose</option>
+    <option value="district1">District 1</option>
+    <option value="district2">District 2</option>
+    <option value="district1">District 3</option>
+    </select>
+
+    <fieldset>
+        <legend>Check atleast one box without fail</legend>
+        <div class="checkbox">
+            <input type="checkbox" id="cbc" name="testType" value="CBC">
+            <label for="cbc">CBC</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="completeUrine" name="testType" value="CompleteUrine">
+            <label for="completeUrine">Complete Urine</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="lipidProfile" name="testType" value="Lipid Profile">
+            <label for="lipidProfile">Lipid Profile</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="tsh" name="testType" value="Thyroid Stimulating Hormone (TSH)">
+            <label for="tsh">Thyroid Stimulating Hormone (TSH)</label>
+        </div>
+        <div class="checkbox">
+            <input type="checkbox" id="glucoseTest" name="testType" value="Glucose Test">
+            <label for="glucoseTest">Glucose Test</label>
+        </div>
+    </fieldset>
+
+    <label for="hardCopy">Do you want a hardcopy of the report?</label></br>
+    <select name="hardCopy" id="hardCopy" required>
+        <option value="">Choose</option>
+        <option value="Yes">Yes</option>
+        <option value="No">No</option>
+    </select>
+<legend>Select Your Comfortable Date and Time</legend></br>
+    <label for="date">Date</label>
+    <input type="date" id="date" required>
+
+    <label for="time">Time</label>
+    <input type="time" id="time" required></br>
+
+    <input class="btn" type = "reset" value = "Reset" name="reset">
+    <input class = "btn" type="Submit" value = "Submit" name="submit">
+</body> 
+</html>
